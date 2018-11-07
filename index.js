@@ -5,7 +5,7 @@ app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
-  response.send('Hello World! modified')
+  response.send('Welcome to Huawei Public Cloud Service Stage Service<br>Application Version: 2')
 })
 
 app.listen(app.get('port'), function() {

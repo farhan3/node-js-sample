@@ -5,6 +5,7 @@ app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
+  console.log("new request received")
   response.send('Welcome to Huawei Public Cloud Service Stage Service<br>This app is running on CCI!')
 })
 
